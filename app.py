@@ -9,3 +9,7 @@ def hello_world():
 @app.route("/hi")
 def hi_world():
     return "<h1>Hello World!</h1>"
+
+
+# so the code can run anywhere outside of localhost
+app.run(host="0.0.0.0")
